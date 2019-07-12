@@ -42,7 +42,6 @@ assert test_copy_arr1[0] != l[0]
 
 # %%
 # 使用asarray方式时，如果输入为ndarray就不copy
-l2 = [1, 2, 3]
 test_copy_arr2 = np.asarray(test_copy_arr1)
 test_copy_arr2[0] = 15
 assert test_copy_arr1[0] == 15

@@ -12,10 +12,10 @@ l1 = np.random.permutation(l)  # 对序列进行随机排列后返回一个新�
 print(l1)
 
 # %%
-arr_rand = np.random.rand(10)  # 均匀分布随机值
-arr_randint = np.random.randint(1, 20, (4, 4))  # 随机整数
-arr_randn = np.random.randn(2, 4)  # 正态分布随机值
-arr_bionomial = np.random.binomial(5, 0.1, 1000)  # 二项分布
-arr_normal = np.random.normal(0, 0.1, 1000)  # 正态高斯分布
+arr_rand = np.random.rand(10)  # 均匀分布随机值,可以指定shape
+arr_randint = np.random.randint(1, 20, (4, 4))  # 随机整数,一般指定low,high,size
+arr_randn = np.random.randn(2, 4)  # 正态分布随机值,可以指定shape
+arr_bionomial = np.random.binomial(5, 0.1, 1000)  # 二项分布,n,p,size
+arr_normal = np.random.normal(0, 0.1, 1000)  # 正态高斯分布，loc,scale,size
 
-# 还有beta、chisquare、gamma、uniform等方法
+# 还有beta、chisquare(卡房分布)、gamma、uniform等方法

@@ -17,6 +17,5 @@ arr2 = np.arange(16).reshape(2, 8)
 np.savez('test_arrays.npz', a=arr, b=arr2)  # 以字典形式保存多个数组
 arr_dict = np.load('test_arrays.npz')
 print(arr_dict['a'])
-np.genfromtxt()
 
 # 同时还有np.loadtxt,np.savetxt等类似操作，还有np.genfromtxt进行定制化的文件读取操作
