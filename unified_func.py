@@ -7,7 +7,8 @@ arr = np.arange(10)
 arr_sqrt = np.sqrt(arr)  # 对矩阵中的每个元素求平方根
 arr_exp = np.exp(arr)  # 对矩阵中的每个元素求自然底数e的x次方
 
-arr_div, arr_mod = np.modf(x)  # 返回整数与小数位两个矩阵
+x = np.random.randn(4, 4)
+arr_mod, arr_div = np.modf(x)  # 返回小数位与整数两个矩阵
 
 arr_abs = np.abs(x)  # 求绝对值，対复数起效
 arr_fabs = np.fabs(x)  # 求绝对值，对非复数起效，速度更快
